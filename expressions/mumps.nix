@@ -18,7 +18,10 @@ stdenv.mkDerivation rec {
   version = "5.2.1";
 
   src = fetchurl {
-    url = "http://graal.ens-lyon.fr/MUMPS/MUMPS_${version}.tar.gz";
+    # graal.ens-lyon.fr is down - I checked on 7/8/2024
+    # url = "http://graal.ens-lyon.fr/MUMPS/MUMPS_${version}.tar.gz";
+    url = "http://coin-or-tools.github.io/ThirdParty-Mumps/MUMPS_${version}.tar.gz";
+
     sha256 = "d988fc34dfc8f5eee0533e361052a972aa69cc39ab193e7f987178d24981744a";
   };
 
