@@ -49,9 +49,9 @@ buildPythonPackage rec {
 
   dontUseCmakeConfigure = true;
 
-  patches = [
-    ./less-warnings.patch
-  ];
+  # patches = [
+  #   ./less-warnings.patch
+  # ];
 
   # do I need this at all?
   postPatch = ''
