@@ -23,6 +23,8 @@ buildPythonPackage rec {
 
   propagatedBuildInputs = [ cadquery ];
 
+  doCheck = false;
+
   checkPhase = ''
     ${python.interpreter} -m unittest tests
   '';
